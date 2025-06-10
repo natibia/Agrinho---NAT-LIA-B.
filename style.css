@@ -142,3 +142,71 @@ h1 {
     flex-wrap: wrap;
     margin-bottom: 300px;
 }
+
+.post {
+    max-width: 460px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #E4E4E4;
+
+    @media (max-width: 800px) {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+.post__header {
+    background-color: aqua;
+    width: 100%;
+    height: 278px;
+    overflow: hidden;
+    position: relative;
+}
+
+.post__header > div {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+}
+
+.post__header > img {
+    width: 100%;
+}
+
+.post__info {
+    padding-top: 20px;
+    padding-bottom: 42px;
+    padding-left: 46px;
+    padding-right: 46px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post__info > h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #171717;
+    margin-bottom: 106px;
+}
+
+.post__info > :nth-child(2) {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #171717;
+    opacity: 56%;
+}
+
+.post__info > :nth-child(3){
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+    color: #171717;
+}
